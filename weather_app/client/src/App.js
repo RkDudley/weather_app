@@ -5,18 +5,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
   state = {
-    weathers: [
-      
-    ]
+    weathers: []
   }
 
   render() {
     return (
       <React.Fragment>
-        <div className="container" >
+      <div className ="wrapper">
+      <div className="container" >
           <Weathers weathers={this.state.weathers}
           />
-        </div>
+        </div>       
+      </div>   
       </React.Fragment>
     );
   }
